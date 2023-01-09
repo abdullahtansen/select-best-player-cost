@@ -1,0 +1,50 @@
+.header-section{
+    background-color: rgba(76, 52, 64, 0.8);
+    background-image: url('../image/path56.png');
+    background-position: left;
+    height: 535px;
+    background-repeat: no-repeat;
+}
+.header-description{
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+}
+.header-section .card-psg{
+    position: relative;
+    top: 8%;
+    left: 75%;
+}
+.header-section .card-psg{
+    position: absolute;
+    
+}
+.header-img-bg .rectangle{
+    position: relative;
+    left: 60%;
+    top: 10%;
+}
+.header-img-bg .football{
+   position: relative;
+   top: 50%;
+   left: 89%;
+}
+.header-img-bg .football{
+   position: absolute;
+}
+.card{
+    height: 300px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.card-body li{
+    list-style-type:decimal ;
+}
+.card-img img{
+    width: 300px;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 10px;
+}
+/* .card button{
+    margin-left: 50%;
+} */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select best players</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header-section">
+        <h1 class="text-white text-center p-3 font-medium text-4xl">My Best Player Neymar</h1>
+            <p class="header-description px-0 mx-auto text-white font-semibold">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+      
+        <div class="grid grid-cols-3 gap-4 px-0 mx-auto">
+            <div>
+                <img src="./image/Mbappe.png" alt="" srcset="">
+            </div>
+           <div class="mx-auto px-10">
+            <img class="card-psg" src="./image/Card-psg.png" alt="" />
+           </div>
+           <div class="header-img-bg">
+            <img class="rectangle" src="./image/Rectangle 57.png" alt="" srcset="">
+            <img class="football" src="./image/soccer-goal-top-png-8 4.png" alt="" />
+           </div>
+        </div>
+    </header>
+    <section class="mt-2 pb-5" id="select-all-player">
+       <div class="grid grid-cols-4 mx-auto px-20 gap-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./image/neymar.png" alt="" srcset="">
+                </div>
+                <div class="card-description text-center">
+                    <h2><span id="player-select">Neymar</span></h2>
+                    <p>36 Goals</p>
+                    <button class="bg-yellow-600 px-10 submit-btn" onclick="addCard(this)">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./image/kylian-mbappe.png" alt="">
+                </div>
+                <div class="card-description text-center">
+                    <h2><span id="player-select">Mbappe</span></h2>
+                    <p>30 Goals</p>
+                    <button class="bg-yellow-600 px-10 submit-btn" onclick="addCard(this)">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./image/messi.png" alt="">
+                </div>
+                <div class="card-description text-center">
+                    <h2><span id="player-select">Lionel Messi</span></h2>
+                    <p>36 Goals</p>
+                    <button class="bg-yellow-600 px-10 submit-btn" onclick="addCard(this)">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">Selected ---- <span id="total-count">0</span></h1>
+                <ul class="px-10 text-center" id="player-li">
+                    
+                </ul>
+            </div>
+        </div>
+       </div>
+       <div class="grid grid-cols-4 mx-auto px-20 gap-4 mt-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./image/Renato-sanches.png" alt="" srcset="">
+                </div>
+                <div class="card-description text-center">
+                    <h2><span id="player-select">Rodrigo</span></h2>
+                    <p>20 Goals</p>
+                    <button class="bg-yellow-600 px-10 submit-btn" onclick="addCard(this)">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./image/sergio-ramos.png" alt="" srcset="">
+                </div>
+                <div class="card-description text-center">
+                    <h2><span id="player-select">Venicious Jr.</span></h2>
+                    <p>33 Goals</p>
+                    <button class="bg-yellow-600 px-10 submit-btn" onclick="addCard(this)">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./image/vitor-machado.png" alt="" srcset="">
+                </div>
+                <div class="card-description text-center">
+                    <h2><span id="player-select">Jesus</span></h2>
+                    <p>20 Goals</p>
+                    <button class="bg-yellow-600 px-10 submit-btn" onclick="addCard(this)">Select</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body text-center">
+                <h2>Budget</h2>
+                <label>Per Player</label> <input id="player-cost" type="text" id="">
+                <button id="calculate-player-btn" class="bg-green-600 px-10 mt-5">Calculate</button>
+                <p>Player Expenses $<span id="total-expenses">5000</span></p>
+                <div class="mt-2">
+                    <label>Manager</label><input type="text" id="manager-input">
+                </div>
+                <div class="mt-2">
+                    <label>Coach</label> <input type="text" id="coach-input">
+                </div>
+                <button id="total-calculate" class="bg-green-600 px-10 mt-5">Calculate</button>
+                <p>Player Total $<span id="total-cost">5000</span></p>
+            </div>
+        </div>
+       </div>
+    </section>
+
+     <script src="js/app.js"></script>
+</body>
+</html>
